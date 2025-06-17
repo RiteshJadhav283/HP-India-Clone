@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+</head>
+<body>
+<!-- This is for the offer bar in the Red -->
+    <div class="offer_Bar">
+        <p class="Deals">Unlock Summer Deals</p>
+        <p class="Discount">Power your productivity with saving up to ₹38800.00<sup>*</sup></p>
+        <button class="Shop_Now">Shop Now</button>
+    </div>
+
+<!-- This has the Navigation content like HP logo, Search Bar, contact number, customer support, service center location, user login/signup/signin -->
+    <div class="main-navbar">
+        <div class="navbar-left">
+            <img class="img_logo" src="https://in-media.apjonlinecdn.com/logo/stores/1/HP_New_logo_1.svg" alt="HP Logo">
+            <div class="search-container">
+                <input class="search_bar1" type="text" placeholder="What are you looking for?">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <span class="sales-number">SALES: <b>1800-108-4747</b></span>
+            <i class="fa-solid fa-headset"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="user-menu-container">
+                <i class="fa-regular fa-user"></i>
+                <div id="account-modal" class="account-modal">
+                    <div class="account-modal-content">
+                        <div class="account-section">
+                            <div class="account-title">MY ACCOUNT</div>
+                            <button class="account-btn">SIGN IN</button>
+                        </div>
+                        <hr>
+                        <div class="account-section">
+                            <div class="account-title">NEW CUSTOMER</div>
+                            <button class="account-btn">CREATE AN ACCOUNT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Categories of Produucts -->
+    <div class="Categories_of_Produuct">
+        <div class="Laptop"><a href="">Laptop</a></div>
+        <div class="Desktop"><a href="">Desktop</a></div>
+        <div class="Printers"><a href="">Printers</a></div>
+        <div class="Ink&Toner"><a href="">Ink&Toner</a></div>
+        <div class="Monitors"><a href="">Monitors</a></div>
+        <div class="Accessories"><a href="">Accessories</a></div>
+        <div class="Care Pack"><a href="">Care Pack</a></div>
+        <div class="Sale"><a href="" style="color: #ff0000;">Sale</a></div>
+        <div class="Support"><a href="">Support</a></div>
+    </div>
+
+<!-- Laptop Modal -->
+    <div class="Laptop_modal">
+        <div class="inner_box_laptop_modal">
+            <div class="modal-col use-col">
+                <div class="modal-title">SHOP BY USE</div>
+                <ul>
+                    <li><a href="">Explore HP Laptops</a></li>
+                    <li><a href="">Home Laptops</a></li>
+                    <li><a href="">Business Laptops</a></li>
+                    <li><a href="">Gaming Laptops</a></li>
+                    <li><a href="">Laptops for Students</a></li>
+                    <li><a href="">Intel Laptops</a></li>
+                    <li><a href="">Premium</a></li>
+                    <li><a href="">Workstations</a></li>
+                    <li><a href="">Copilot+ PCs</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+            </div>
+            <div class="modal-col series-col">
+                <div class="modal-title">SHOP BY SERIES</div>
+                <div class="series-flex">
+                    <div>
+                        <div class="series-subtitle">Home Laptops</div>
+                        <a href="">OmniBook Ultra</a>
+                        <a href="">OmniBook X</a>
+                        <a href="">OmniBook 7</a>
+                        <a href="">OmniBook 5</a>
+                        <a href="">OmniBook 3</a>
+                        <a href="">Envy</a>
+                        <a href="">Pavilion</a>
+                        <a href="">HP Essentials</a>
+                        <a href="">Chromebook</a>
+                        <a href="">Spectre</a>
+                    </div>
+                    <div>
+                        <div class="series-subtitle">Business Laptops</div>
+                        <a href="">EliteBook Ultra</a>
+                        <a href="">EliteBook X</a>
+                        <a href="">Elite Dragonfly</a>
+                        <a href="">EliteBook</a>
+                        <a href="">ProBook</a>
+                        <a href="">ZBook Workstations</a>
+                        <a href="">HP Essentials</a>
+                        <div class="series-subtitle" style="margin-top: 16px;">Gaming Laptops</div>
+                        <a href="">OMEN</a>
+                        <a href="">VICTUS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-col icon-col">
+                <a href=""><i class="fa-solid fa-tag"></i> Laptops On Sale</a>
+                <a href=""><i class="fa-solid fa-star"></i> New Laptops</a>
+                <a href=""><i class="fa-solid fa-list"></i> View All Laptops</a>
+                <a href=""><i class="fa-solid fa-microchip"></i> AI Laptops</a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i> Find My Laptops</a>
+                <a href=""><i class="fa-solid fa-sliders"></i> Customise Gaming Laptops</a>
+                <a href=""><i class="fa-solid fa-sliders"></i> Customise Business Laptops</a>
+            </div>
+            <div class="modal-col banner-col">
+                <img src="https://in-media.apjonlinecdn.com/wysiwyg/l2-menu-banner/25C3-IN-EN-CTO-L2-Single-Banner-x3-924x360.jpg" alt="Banner" />
+            </div>
+        </div>
+    </div>
+
+<!-- Desktop Modal -->
+    <div class="Desktop_modal">
+        <div class="inner_box_desktop_modal">
+            <div class="modal-col use-col">
+                <div class="modal-title">SHOP BY USE</div>
+                <ul>
+                    <li><a href="">Explore HP Desktops</a></li>
+                    <li><a href="">Desktops for Home</a></li>
+                    <li><a href="">Business Desktops</a></li>
+                    <li><a href="">Gaming Desktops</a></li>
+                    <li><a href="">Premium</a></li>
+                    <li><a href="">All in One</a></li>
+                    <li><a href="">Workstations</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+            </div>
+            <div class="modal-col series-col">
+                <div class="modal-title">SHOP BY SERIES</div>
+                <div class="series-flex">
+                    <div>
+                        <div class="series-subtitle">Home Desktops</div>
+                        <a href="">OmniStudio X</a>
+                        <a href="">Envy</a>
+                        <a href="">HP Essentials</a>
+                        <div class="series-subtitle" style="margin-top: 16px;">Gaming Desktops</div>
+                        <a href="">OMEN</a>
+                    </div>
+                    <div>
+                        <div class="series-subtitle">Business Desktops</div>
+                        <a href="">Z Workstations</a>
+                        <a href="">ProDesk</a>
+                        <a href="">EliteDesk</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-col icon-col">
+                <a href=""><i class="fa-solid fa-tag"></i> Desktops on Sale</a>
+                <a href=""><i class="fa-solid fa-star"></i> New Desktops</a>
+                <a href=""><i class="fa-solid fa-list"></i> View All Desktops</a>
+            </div>
+            <div class="modal-col banner-col">
+                <img class="mplazyload" style="max-height: 120px;" src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2_Single_Banner_x3_-_924x360_-_Shop_Now_Violator-min.jpg" id="RKP4WEG">
+            </div>
+        </div>
+    </div>
+
+<!-- Printer Modal -->
+    <div class="Printer_modal">
+        <div class="inner_box_printer_modal">
+            <div class="modal-col use-col">
+                <div class="modal-title">SHOP BY USE</div>
+                <ul>
+                    <li><a href="">Explore HP Printers</a></li>
+                    <li><a href="">Printers for Home</a></li>
+                    <li><a href="">Business Printers</a></li>
+                    <li><a href="">A3 Printers</a></li>
+                    <li><a href="">Laser Printers</a></li>
+                    <li><a href="">Inkjet Printers</a></li>
+                    <li><a href="">Printer Scanners</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+            </div>
+            <div class="modal-col series-col">
+                <div class="modal-title">SHOP BY SERIES</div>
+                <div class="series-flex">
+                    <div>
+                        <div class="series-subtitle">Home / Home Office Printers</div>
+                        <a href="">Ink/Smart Tank</a>
+                        <a href="">Deskjet</a>
+                    </div>
+                    <div>
+                        <div class="series-subtitle">Business Printers</div>
+                        <a href="">Scan Jet</a>
+                        <a href="">LaserJet</a>
+                        <a href="">OfficeJet</a>
+                        <a href="">Large Format / DesignJet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-col icon-col">
+                <a href=""><i class="fa-solid fa-tag"></i> Printers On Sale</a>
+                <a href=""><i class="fa-solid fa-star"></i> New Printers</a>
+                <a href=""><i class="fa-solid fa-list"></i> View All Printers</a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i> Find My Printer</a>
+                <a href=""><i class="fa-solid fa-droplet"></i> HP Easy Ink</a>
+            </div>
+            <div class="modal-col banner-col">
+                <div class="banner">
+                    <img class="mplazyload" src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2-single_3.jpg" id="ABYT2YK" data-id="in|print-top-picks|08112024|gnav" data-name="print-top-picks" data-creative="creative" data-position="gnav" data-clicktype="shop-now" style="max-height: 120px; width: auto; height: auto;">    
+                </div>
+                <div class="banner">
+                    <img src="https://in-media.apjonlinecdn.com/wysiwyg/2025/L2-menu/25C3-IN-PrinterPWP-SB-L2-Single-924x360.jpg" id="KY6BB5S" data-id="in|print-pwp-offer|260525|gnav" data-name="print-pwp-offer" data-gtm-category="promotionClick" data-gtm-id="in|print-pwp-offer|260525|gnav" data-gtm-value="shop-now" data-creative="creative" data-position="gnav" data-clicktype="shop-now" style="max-height: 120px; width: auto; height: auto;">    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Ink Toner Modal -->
+    <div class="InkToner_modal">
+        <div class="inner_box_inktoner_modal">
+            <div class="modal-col use-col">
+                <div class="modal-title">SHOP BY USE</div>
+                <ul>
+                    <li><a href="">Ink / Toner</a></li>
+                    <li><a href="">Printhead / Maintenance Kits</a></li>
+                </ul>
+            </div>
+            <div class="modal-col series-col">
+                <div class="modal-title">SERVICES</div>
+                <ul>
+                    <li><a href="">Easy ink</a></li>
+                </ul>
+            </div>
+            <div class="modal-col icon-col"></div>
+            <div class="modal-col banner-col"></div>
+        </div>
+    </div>
+
+
+<!-- Monitors Modal -->
+    <div class="Monitors_modal">
+        <div class="inner_box_monitors_modal">
+            <div class="modal-col use-col">
+                <div class="modal-title">SHOP BY USE</div>
+                <ul>
+                    <li><a href="">Explore HP Monitors</a></li>
+                    <li><a href="">Home Monitors</a></li>
+                    <li><a href="">Business Monitors</a></li>
+                    <li><a href="">Gaming Monitors</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+            </div>
+            <div class="modal-col series-col">
+                <div class="modal-title">SHOP BY SERIES</div>
+                <div class="series-flex">
+                    <div>
+                        <div class="series-subtitle">Home Monitors</div>
+                        <a href="">HP Series 5</a>
+                        <a href="">HP M-Series</a>
+                        <a href="">HP V-Series</a>
+                        <div class="series-subtitle" style="margin-top: 16px;">Gaming Monitors</div>
+                        <a href="">OMEN</a>
+                    </div>
+                    <div>
+                        <div class="series-subtitle">Business Monitors</div>
+                        <a href="">HP Series 5 Pro</a>
+                        <a href="">HP Series 3 Pro</a>
+                        <a href="">Z by HP</a>
+                        <a href="">HP E-Series</a>
+                        <a href="">HP P-Series</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-col icon-col">
+                <a href=""><i class="fa-solid fa-tag"></i> Monitors On Sale</a>
+                <a href=""><i class="fa-solid fa-star"></i> New Monitors</a>
+                <a href=""><i class="fa-solid fa-list"></i> View All Monitors</a>
+            </div>
+            <div class="modal-col banner-col">
+                <div class="banner">
+                    <img src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2-single-1.jpg" id="KY6BB5S" data-id="in|monitor-business|210824|gnav" data-name="monitor-business" data-creative="creative" data-position="gnav" data-clicktype="shop-now" style="max-height: 120px; width: auto; height: auto;">    
+                </div>
+                <div class="banner">
+                    <img src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2-single-2.jpg" id="KY6BB5S" data-id="in|monitor-gaming|210824|gnav" data-name="monitor-gaming" data-creative="creative" data-position="gnav" data-clicktype="shop-now" style="max-height: 120px; width: auto; height: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Accessories Modal -->
+    <div class="Accessories_modal">
+        <div class="inner_box_accessories_modal">
+            <div class="modal-col use-col">
+                <div class="modal-title">SHOP BY USE</div>
+                <ul>
+                    <li><a href="">Explore HP Accessories</a></li>
+                    <li><a href="">Gaming Accessories</a></li>
+                    <li><a href="">HyperX</a></li>
+                    <li><a href="">Business Accessories</a></li>
+                    <li><a href="">Poly</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+            </div>
+            <div class="modal-col series-col">
+                <div class="modal-title">SHOP BY SERIES</div>
+                <div class="series-flex">
+                    <div>
+                        <a href="">Mouse</a>
+                        <a href="">Batteries, Chargers & Adapters</a>
+                        <a href="">Gaming</a>
+                        <a href="">Speakers & Audio</a>
+                        <a href="">Memory and Storage</a>
+                    </div>
+                    <div>
+                        <a href="">Bags, Cases & Sleeves</a>
+                        <a href="">Keyboards</a>
+                        <a href="">Docks & Docking Stations</a>
+                        <a href="">Stylus Pens</a>
+                        <a href="">Cables</a>
+                        <a href="">Webcam</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-col icon-col">
+                <a href=""><i class="fa-solid fa-tag"></i> Accessories on Sale</a>
+                <a href=""><i class="fa-solid fa-star"></i> New Accessories</a>
+                <a href=""><i class="fa-solid fa-list"></i> View All Accessories</a>
+            </div>
+            <div class="modal-col banner-col">
+                <div class="banner">
+                    <img src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2_Single_Banner_x3_-_924x360_2.jpg" id="PQYABJH" data-id="in|accessories|13062024|gnav" data-name="accessories" data-creative="creative" data-position="gnav" data-clicktype="shop-now">
+                </div>
+                <div class="banner">
+                    <img src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/L2-single-hyperx_1.jpg" id="PQYABJH" data-id="in|hyperxaccesories|031024|gnav" data-name="hyperx accesories" data-creative="creative" data-position="gnav" data-clicktype="shop-now">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Support Modal -->
+    <div class="Support_modal">
+        <div class="inner_box_support_modal">
+            <!-- Support for Store -->
+            <div class="modal-col">
+                <div class="modal-title">SUPPORT FOR STORE</div>
+                <ul>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Store FAQ</a></li>
+                    <li><a href="#">Care Packs</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Payment</a></li>
+                </ul>
+            </div>
+            <!-- Technical Support -->
+            <div class="modal-col">
+                <div class="modal-title">TECHNICAL SUPPORT</div>
+                <ul>
+                    <li>
+                        <span style="font-size: 1.1em; margin-right: 8px;">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        1800 258 7170
+                    </li>
+                    <li><a href="#">Support & Troubleshooting</a></li>
+                    <li><a href="#">Software & Drivers</a></li>
+                    <li><a href="#">Support Forums</a></li>
+                    <li><a href="#">Register My Products</a></li>
+                    <li><a href="#">Business Support</a></li>
+                </ul>
+            </div>
+            <!-- Sales -->
+            <div class="modal-col">
+                <div class="modal-title">SALES</div>
+                <ul>
+                    <li>
+                        <span style="font-size: 1.1em; margin-right: 8px;">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        1800-108-4747
+                    </li>
+                    <li>
+                        <span style="font-size: 1.1em; margin-right: 8px;">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                        WhatsApp Sales Support<br>
+                        +18337500500
+                    </li>
+                    <li>
+                        <span style="font-size: 1.1em; margin-right: 8px;">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </span>
+                        WhatsApp Post Sales Support<br>
+                        +18335950700
+                    </li>
+                    <li>
+                        <span style="font-size: 1.1em; margin-right: 8px;">
+                            <i class="fa-solid fa-video"></i>
+                        </span>
+                        Live Product Demo
+                    </li>
+                </ul>
+            </div>
+            <!-- Banner -->
+            <div class="modal-col banner-col">
+                <div class="banner">
+                    <img src="https://in-media.apjonlinecdn.com/wysiwyg/2024/L2-menu/Live_Expert_-_L2_Banner.jpg" data-position="gnav" data-creative="creative" data-clicktype="learn-more" data-id="in|live-experts|08062023|gnav" data-name="live-experts" style="max-height: 240px; width: 308px; height: 240px;" width="308" height="240">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Done with the Modal for the Categories of Produucts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Part -->
+    <footer class="Footer_part">
+        <div class="inner_div_footer">
+            <div class="Country_Price">
+                <div class="Flag">
+                    <img width="30px" height="20px" style="border-radius: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png">
+                    <p class="Country_name">India</p>
+                </div>
+                <div class="Pricing">
+                    <p class="Price">Price is inclusive of 18% GST (where applicable).</p>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-title">Contact Us</div>
+                    <ul>
+                        <li>Home Customers<br><a href="tel:18001084746">1800 108 4746</a></li>
+                        <li>Business Customers<br><a href="tel:18001084747">1800 108 4747</a></li>
+                        <li>Technical Support<br><a href="tel:18002587170">1800 258 7170</a></li>
+                        <li>Mon - Fri 9 am - 7 pm<br><span style="font-size: 13px; color: #ababab;">(excl. Public Holidays)</span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-title">Shop For Products</div>
+                    <ul>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Desktops</a></li>
+                        <li><a href="#">Printers</a></li>
+                        <li><a href="#">Ink & Toner</a></li>
+                        <li><a href="#">Monitors</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Care Pack</a></li>
+                        <li><a href="#">Latest Offers</a></li>
+                        <li><a href="#">Latest Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-title">Customer Service</div>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Software & Drivers</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback & Complaints</a></li>
+                        <li><a href="#">How to Order</a></li>
+                        <li><a href="#">Live Expert</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-title">My HP</div>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Tech Takes</a></li>
+                        <li><a href="#">Sustainable Impact</a></li>
+                        <li><a href="#">HP Store Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-title">HP STORES</div>
+                    <ul>
+                        <li><a href="#">HP Online Store</a></li>
+                        <li><a href="#">HP Employee Store</a></li>
+                        <li><a href="#">Corporate Employee Offers</a></li>
+                        <li><a href="#">Student Store</a></li>
+                        <li><a href="#">Original Rewards Program</a></li>
+                        <li><a href="#">HP Advantage for Business</a></li>
+                        <li><a href="#">HP Corporate Accessories Store</a></li>
+                        <li><a href="#">HP Planet Partners Rewards</a></li>
+                        <li><a href="#">HP Deskjet Supplies Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-title">Stay Connected</div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/HPIndia/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/user/HPPCIndia" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/hpindia" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.pinterest.com/hp/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom-bar">
+        <div class="inner_footer">
+            <div class="footer-bottom-links">
+                <li>
+                    <a href="https://www.hp.com/in-en/shop/terms-conditions">Terms & conditions of sales & service</a>
+                </li>
+                <li>
+                    <a href="https://www.hp.com/in-en/shop/terms-of-use">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="https://www.hp.com/in-en/shop/sitemap">Site map</a>
+                </li>
+                <li>
+                    <a href="https://www.hp.com/in-en/privacy/privacy.html" target="_blank" rel="noopener">Privacy Statement</a>
+                </li>
+            </div>
+            <div class="footer-bottom-copyright">
+                © 2025 HP INDIA SALES PRIVATE LIMITED
+            </div>
+            <div class="footer-bottom-vendor">
+                This e-store is Serviced by Savex Technologies Pvt Ltd. (124, Maker Chambers 3, Nariman Point, Mumbai - 21).
+            </div>
+            <div class="footer-bottom-bugs">
+                <a href="mailto:opsmanager@hp.com" class="footer-bugs-link">
+                <span class="icn_bug">🐞 HP employees: Report website issues</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- Script for the Index page -->
+    <script src="script.js"></script>
+</body>
+</html>

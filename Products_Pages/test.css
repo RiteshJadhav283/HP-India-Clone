@@ -1,0 +1,371 @@
+/* Font Definitions */
+@font-face {
+    font-family: hpIconfont;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/hpIconfont/iconfont.woff2') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/hpIconfont/iconfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: FormaDJRMicro-Regular;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Regular.woff2') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: FormaDJRMicro-Bold;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Bold.woff2') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/FormaDJR/FormaDJRMicro-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: HPIcons;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/hpicons/hpi-hf-icons.woff2') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/hpicons/hpi-hf-icons.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: icomoon;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/icomoon/icomoon.woff2') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/icomoon/icomoon.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: luma-icons;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/Luma-Icons.woff2') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/Luma-Icons.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/fontawesome-webfont.eot?v=4.6.3');
+    src: url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),
+         url('https://in-media.apjonlinecdn.com/static/version1748383971/frontend/HPOLS/stellar/en_US/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Form DJR Micro Font Family variations */
+@font-face {
+    font-family: forma-djr-micro;
+    src: url("https://use.typekit.net/af/4240d2/00000000000000003b9ae4dc/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"),
+         url("https://use.typekit.net/af/4240d2/00000000000000003b9ae4dc/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"),
+         url("https://use.typekit.net/af/4240d2/00000000000000003b9ae4dc/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-stretch: normal;
+}
+
+/* Button Styles */
+a.action.primary, button {
+    border-radius: 3px;
+}
+
+a.action.primary {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.action.primary, a.action.primary, button {
+    font-family: FormaDJRMicro-Regular;
+    color: #fff;
+    border: 1px solid #165dba;
+    background: #165dba;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: FormaDJRMicro-Bold;
+    font-weight: 700;
+}
+
+/* Icon Styles */
+.fa {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Category Compare List Styles */
+.category-compare-list {
+    background: #fff;
+    width: 100%;
+    z-index: 333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* Product Data Items Styles */
+.catalog-product-view .page-main .product.info.detailed .product-data-items .product-data-titles {
+    height: auto;
+    background: #2c3038;
+    margin: 0 auto;
+    z-index: 97;
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.catalog-product-view .page-main .product.info.detailed .product-data-items .product-data-titles::-webkit-scrollbar {
+    display: none;
+}
+
+.catalog-product-view .page-main .product.info.detailed .product-data-items .product-data-titles .data.item.title.active span:last-child {
+    border-bottom: 2px solid #ccc;
+}
+
+.catalog-product-view .page-main .product.info.detailed .product-data-items .product-data-titles .data.item.title.active a.data {
+    color: #ccc;
+}
+
+/* Additional Attributes Content Styles */
+.catalog-product-view .page-main #additional .additional-attributes-content {
+    overflow: hidden;
+}
+
+.catalog-product-view .page-main #additional .additional-attributes-content .content-div {
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: -1px;
+}
+
+.catalog-product-view .page-main #additional .additional-attributes-content .content-div .content {
+    width: 100%;
+    margin-right: 5%;
+}
+
+.catalog-product-view .page-main #additional .additional-attributes-content .content-div .content p {
+    text-align: left;
+    letter-spacing: 0;
+    color: #2c3038;
+    margin: 0;
+}
+
+.catalog-product-view .page-main #additional .additional-attributes-content .content-div .content .title {
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    height: 37px;
+}
+
+.catalog-product-view .page-main #additional .additional-attributes-content .content-div .content .con {
+    min-height: 42px;
+    font-family: FormaDJRMicro-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 56px;
+}
+
+/* More or Less Specification Button */
+.catalog-product-view .page-main #additional .more-or-less-specification {
+    padding-top: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.catalog-product-view .page-main #additional .more-or-less-specification button {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: FormaDJRMicro-Bold;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 12px 32px;
+    height: 46px;
+    color: #000;
+    background: inherit;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 1023px) {
+    .level0.level-top.ui-menu-item>ul li ul {
+        display: flex!important;
+    }
+    
+    .sections.nav-sections .navigation li.level-top>ul.submenu li ul.dropdown-menu li ul li a span {
+        text-transform: capitalize;
+        color: #000!important;
+    }
+    
+    .sections.nav-sections .navigation .nav-1-dropdown {
+        top: 64px;
+    }
+    
+    /* More mobile styles... */
+}
+
+@media only screen and (max-width: 767px) {
+    .breadcrumbs, .header.content, .navigation, .page-main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .navigation {
+        padding: 0;
+    }
+    
+    .nav-sections {
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+        left: calc(-1*(100% - 54px));
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        width: calc(100% - 54px);
+    }
+    
+    /* More mobile styles... */
+}
+
+/* Footer Styles */
+.page-footer .footer.content .footer-additional-info .footer-additional-info-left .fonter_contact_us .contact_us_info {
+    margin-top: 0!important;
+}
+
+.page-footer .footer.content .footer-additional-info .footer-additional-info-left .fonter_contact_us .contact_us_info li:last-child span {
+    padding-bottom: 0;
+}
+
+.page-footer .footer.content .footer-additional-info .footer-additional-info-right [data-content-type=row] .footer-links ul {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Stellar Typography Classes */
+.stellar-title-banners {
+    font-size: 40px;
+    line-height: 46px;
+    font-family: FormaDJRMicro-Regular;
+    font-weight: 400;
+}
+
+.stellar-title__large {
+    font-size: 34px;
+    line-height: 40px;
+    font-family: FormaDJRMicro-Regular;
+    font-weight: 400;
+}
+
+.stellar-title__medium {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: FormaDJRMicro-Regular;
+    font-weight: 400;
+}
+
+.stellar-body-banners {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: FormaDJRMicro-Regular;
+    font-weight: 400;
+}
+
+.stellar-body__medium {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: FormaDJRMicro-Regular;
+    font-weight: 400;
+}
+
+.stellar-bold__large {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: FormaDJRMicro-Bold;
+    font-weight: 700;
+}
+
+.stellar-bold__medium {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: FormaDJRMicro-Bold;
+    font-weight: 700;
+}
+
+/* Scroll to Top Button */
+#um-scrolltotop {
+    bottom: 200px;
+    position: fixed;
+    z-index: 111;
+}
+
+#um-scrolltotop.um-scrolltotop-right {
+    right: 27px;
+}
+
+#um-scrolltotop .um-stotop {
+    display: flex;
+    align-items: center;
+    background: #666;
+    border-radius: 25px;
+}
+
+#um-scrolltotop .um-stotop i:after {
+    content: "\e673";
+    transform: rotate(-90deg);
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #fff!important;
+    padding: 12px;
+    font-family: hpIconfont;
+    display: flex;
+    align-items: center;
+}
+
+/* Grid System Variables */
+:root {
+    --bs-columns: 8;
+    --bs-gap: 16px;
+    --bs-margin: auto 20px;
+    --bs-width: 20px;
+    --bs-offset: -20px;
+}
+
+/* Helper Classes */
+.clear_100h, .clear_20h, .clear_5h, .clearfix:after, .container:after, .row:after {
+    clear: both;
+}
+
+.clear_100h {
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Hide for small screens */
+@media screen and (max-width: 767px) {
+    .hide_for_sm {
+        display: none!important;
+    }
+}

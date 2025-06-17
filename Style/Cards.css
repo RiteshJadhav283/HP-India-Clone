@@ -1,0 +1,327 @@
+.item.product.product-item.g-col-4.g-col-xl-4.item.product.product-item.g-col-4.g-col-xl-4.g-col-lg-6
+{
+    width: 350.817px;
+    height:932.5px;
+    border:1px solid #e6e6e6;
+}
+.item.product.product-item.g-col-4.g-col-xl-4.item.product.product-item.g-col-4.g-col-xl-4.g-col-lg-6:hover
+{
+    transition: 0.2s ease;
+    border:1px solid black;
+}
+.product-item-promotion-message.opacity-100
+{
+    width:250px;
+    height:40px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.promotion-discount__tags
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf76e;
+    border-radius: 2px;
+    width: 250px;
+    height:20px;
+    font-size:14px;
+    text-align: center;
+    align-items: center;
+}
+.product-item-photo-box.has-included
+{
+    width:238.817px;
+    height:260px;
+    display: flex;
+}
+.product.product-included.included
+{
+    width:114px;
+    height:260px;
+}
+.included
+{
+    margin:0px;
+    padding:0px;
+    width:112.2px;
+    height:260px;
+    list-style-type: none;
+}
+.included li
+{
+    display: flex;
+    width:92px;
+    height:87.2667px;
+    align-items:center;
+    justify-content: center;
+}
+.product-included-item
+{
+    width:48px;
+    height:48px;
+}
+.product.photo.product-item-photo
+{
+    width:273.4px;
+    height:260px;
+}
+.product-item-promotion-icons
+{
+    font-family: 'Poppins', sans-serif;
+    border-left: 5px solid #00d072;
+    font-size:13px;
+    padding-left: 10px;
+    width:317px;
+    height:24px;
+    display: flex;
+    align-items: center;
+}
+.product details.product-item-details
+{
+    width:317.817px;
+    height:511.5px; 
+}
+.bv_reviews
+{
+    height:21px;
+    width:317.817px;
+}
+.product.name.product-item-name
+{
+    font-family: 'Poppins', sans-serif;
+    width:317.817px;
+    height:56px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.plp-h2-title.stellar-title__small
+{
+    margin: 0px;
+    margin-bottom:10px
+}
+.short_desc.stellar-bold__small
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom:10px
+}
+.product-desc-features.stellar-body__small
+{
+    width:317.817px;
+    height:198px;
+}
+.product-desc-features.stellar-body__small ul
+{
+    display: flex;
+}
+.product-desc-features ul {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;        
+  line-height: 1.4;
+  
+}
+
+.product-desc-features li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    position: relative;
+    font-weight: 500;         
+    padding-right: 15px;   
+}
+
+.product-desc-features li:not(:last-child)::after {
+  content: "●";
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: black;
+}
+.product-compare.actions-secondary
+{
+
+    font-family: 'Poppins', sans-serif;
+    width:317.817px;
+    height:34px;
+    display: flex;
+    border-top:0.5px solid black;
+    border-bottom:0.5px solid black;
+    align-items: center;
+    padding-left: 5px;
+    gap:150px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.action.tocompare.product-item-promotion-icons.not-after
+{
+    width:93.4px;
+    height:32px;
+}
+.tocompare-checkbox {
+  display: inline-block;         /* Ensures the span respects width/height */
+  width: 24px;
+  height: 24px;
+  border: 1px solid #000;        /* Add a border to make it visible */
+  background-color: white;       /* Optional: background */
+  box-sizing: border-box;
+  vertical-align: middle;        /* Aligns with text */
+}
+.tocompare-checkbox.checked::after {
+  content: "✔";
+  display: block;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  color: green;
+}
+.cashify-tip.stellar-body__extra-small
+{
+    width: 317.817px;
+    height:14px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.product-item-inner
+{
+    font-family: 'Poppins', sans-serif;
+    width:317.817px;
+    height:100.5px;
+    display: flex;
+    gap:105px
+}
+.product.actions.product-item-actions 
+{
+    width: 194.767px;
+    height: 100.5px;
+}
+.suggest-retail-price.simple
+{
+    padding: none;
+    width:194.767px;
+    height:16px;
+    font-size: 13px;
+    display: flex;
+    gap:15px;
+}
+.old-price
+{
+    width:43.5px;
+    height:16px;
+    text-decoration: line-through;
+}
+
+.mrp.discount.mrp-discount.stellar-body__extra-small
+{
+
+    font-size: 12px;
+    background-color: #fdf76e;
+    text-align: center;
+    padding-left: 3px;
+}
+.old-price{
+  position: relative;
+  display: inline-block;
+  color: #888; /* Match your design */
+  font-size: 12px; /* Adjust as needed */
+}
+.old-price::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px; /* Thickness of the line */
+  background: #888; /* Match the text color */
+  transform: rotate(-8deg); /* Adjust angle as needed */
+  transform-origin: left center;
+  pointer-events: none;
+}
+.price-box.price-final_price
+{
+    width:194.767px;
+    height:44.5px;
+    display: flex;
+    font-size: 15px;
+}
+.msi-staging.stellar-body__extra-small
+{
+    color: #888;
+    border-top:10px ;
+    width:192.767px;
+    height:32px;
+    font-size: 10px;
+}
+.wishlist-airline
+{
+    width:24px;
+    height:34.35px;
+
+}
+.product-item-out-of-stock-message.stellar-body__extra-small
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:317.767px;
+    height: 16px;
+}
+.product-item-tabbar
+{
+
+    font-family: 'Poppins', sans-serif;
+    width:317.817px;
+    height: 38px;
+    display: flex;
+    gap: 8px;
+}
+.product-item-tabbar-left
+{
+    display: flex;
+    align-items: center;
+    width:110.1px;
+    height: 38px;
+    text-align: center;
+}
+.product-item-tabbar-right
+{
+    width: 117px;
+    height: 38px;
+}
+.action.tocart.primary
+{
+    width: 117px;
+    height: 38px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px;
+    border: 0px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+.view-details {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.view-details::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.view-details:hover::after {
+  width: 100%;
+}

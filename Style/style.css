@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+.offer_Bar
+{
+    display: flex;
+    align-items: center;
+    background-color: #c00;
+    gap: 40px;
+    justify-content: center;
+    padding: 12px 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+}
+.Deals
+{
+    font-size: 22.5px;
+    margin: 0%;
+    color: white;
+    letter-spacing: 0.45px;
+}
+.Discount
+{
+    font-size: 18px;
+    margin: 0%;
+    color: white;
+    font-weight: 400;
+}
+.Discount sup
+{
+    font-size: 10.8px;
+}
+.Shop_Now
+{
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 28px;
+    border: none;
+    cursor: pointer;
+    margin-left: 12px;
+    transition: background 0.2s;
+}
+.Shop_Now:hover
+{
+    background: #222;
+}
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px 0 48px;
+    background: #fff;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.img_logo
+{
+    width: 56px;
+    height: 56px;
+    margin: 0;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    padding: 0 16px;
+    height: 48px;
+    width: 420px;
+}
+.search_bar1
+{
+    border: none;
+    outline: none;
+    font-size: 1.15rem;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+}
+.search-container i.fa-magnifying-glass {
+    color: #222;
+    font-size: 1.5rem;
+    margin-left: 12px;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.sales-number {
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.navbar-right i {
+    font-size: 1.6rem;
+    color: #222;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.navbar-right i:hover {
+    color: #c00;
+}
+.category-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+.category-menu a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.18rem;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+.category-menu a.sale-link {
+    color: #c00;
+    font-weight: 600;
+}
+.category-menu a:hover {
+    color: #c00;
+}
+
+/* Enhanced Mega Menu Styles */
+.mega-menu {
+    display: flex;
+    position: absolute;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    gap: 32px;
+    z-index: 1000;
+    border-radius: 0;
+    min-width: unset;
+    width: 100%;
+    max-width: 1280px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    border: 1px solid #eee;
+    animation: menuFadeIn 0.2s ease-out;
+}
+
+.mega-menu-col {
+    min-width: 240px;
+    padding: 0 16px;
+}
+
+.mega-menu-col:not(:last-child) {
+    border-right: 1px solid #eee;
+}
+
+.mega-menu-title {
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #c00;
+    display: inline-block;
+}
+
+.mega-menu a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    line-height: 1.5;
+    position: relative;
+    margin: 4px 0;
+}
+
+.mega-menu a:hover {
+    color: #c00;
+    transform: translateX(4px);
+}
+
+.mega-menu a i {
+    margin-right: 12px;
+    color: #666;
+    width: 16px;
+    text-align: center;
+}
+
+.mega-menu-col.mega-menu-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 320px;
+    max-width: 320px;
+    width: 320px;
+    padding: 0;
+    border-right: none;
+}
+
+.mega-menu-col.mega-menu-banner img {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mega-menu-col.mega-menu-banner img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.series-flex {
+    display: flex;
+    gap: 32px;
+}
+
+.series-col {
+    min-width: 200px;
+}
+
+.mega-menu-subtitle {
+    font-weight: 600;
+    color: #666;
+    margin: 24px 0 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Add animation for menu appearance */
+@keyframes menuFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.mega-menu {
+    animation: menuFadeIn 0.2s ease-out;
+}

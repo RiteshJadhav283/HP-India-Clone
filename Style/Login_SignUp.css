@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.offer_Bar
+{
+    display: flex;
+    align-items: center;
+    background-color: #c00;
+    gap: 40px;
+    justify-content: center;
+    padding: 12.6px 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+}
+.Deals
+{
+    font-size: 22.5px;
+    margin: 0%;
+    color: white;
+    letter-spacing: 0.45px;
+}
+.Discount
+{
+    font-size: 18px;
+    margin: 0%;
+    color: white;
+    font-weight: 400;
+}
+.Discount sup
+{
+    font-size: 10.8px;
+}
+.Shop_Now
+{
+    border-radius: 1.8px;
+    background-color: black;
+    color: white;
+    font-size: 16.2px;
+    font-weight: 500;
+    padding: 7.2px 25.2px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10.8px;
+    transition: background 0.2s;
+}
+.Shop_Now:hover
+{
+    background: #222;
+}
+.Header_content
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.img_logo
+{
+    width: 48px;
+    height: 48px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.search_bar1
+{
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 300px;
+    height: 45px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+body {
+    background: #dedede;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    width: 430px;
+    max-width: 95vw;
+    margin: 40px auto;
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside_main1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inside_main1 img {
+    width: 48px;
+    margin-bottom: 16px;
+}
+
+.Sign_in_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 18px;
+}
+
+.Sign_in {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #222;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.Create_Account {
+    color: #0071bb;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 6px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.input_box {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.Input_Taken_UserName_Email {
+    width: 100%;
+    padding: 14px 12px;
+    border: 2px solid #0071bb;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: 0;
+    transition: border 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.Input_Taken_UserName_Email:focus {
+    border-color: #005999;
+}
+
+.Input_Taken_UserName_Email::placeholder {
+    color: #888;
+    font-size: 1rem;
+}
+
+.Sign_in_with_mobile_number {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+.Sign_in_with_mobile_number p {
+    color: #0071bb;
+    font-size: 1.1rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.Use_Password_Button {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.Use_pass {
+    width: 100%;
+    background: #0071bb;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    padding: 16px 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.Use_pass:hover {
+    background: #005999;
+}
+
+.or {
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+.or1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.sign_in_with_code {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.Send_sign_in_code {
+    width: 100%;
+    background: #fff;
+    color: #0071bb;
+    border: 2px solid #0071bb;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.Send_sign_in_code:hover {
+    background: #f0f8ff;
+}
+
+.confirmation_username_and_email_remember {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.Check_box_Remember {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.Remember_username_or_email {
+    font-size: 1.05rem;
+    color: #222;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.forgot_username {
+    width: 100%;
+    text-align: center;
+    margin: 18px 0;
+}
+
+.Forgot_your_username {
+    color: #0071bb;
+    font-size: 1.1rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.google_login {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.google_login button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4285f4;
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.google_login button img {
+    width: 24px;
+    height: 24px;
+}
+
+.privacy-link {
+    color: #aaa;
+    font-size: 1rem;
+    text-align: right;
+    margin-top: 32px;
+    width: 100%;
+}
+
+
+
+/* Banner Part */
+
+.Banner_box
+{
+    width: 1617px;
+    height: 532px;
+    border: none;
+    margin-right: 50px;
+}
