@@ -2240,6 +2240,459 @@
 
 
 
+<!--Compare Products-->
+<div class="category-compare-list" data-bind="scope: 'compareProductsCustom'" data-role="compare-products" style="bottom: 0px;">
+    <div class="compare-message stellar-body__medium hide">
+        <span class="title"></span>
+        <i class="toggle-icon"></i>
+    </div>
+    <div class="compare-box headless" data-bind="css: {'no-display': disallowCompare(defaultConfigData, categoryUrlKey, pageIdentifier), 'headless': isEnableHeadless }, afterRender: function() {$data.initSidebar()}">
+        <div class="compare-header stellar-body__medium active">
+            <span class="title stellar-body__medium">Compare Products</span>
+            <div class="compare-count">
+                <i class="toggle-icon"></i>
+                <span class="count stellar-body__small">
+                    <span>1</span>/4                </span>
+            </div>
+        </div>
+        <div class="category-compare-tabs product data items mage-tabs-disabled" data-bind="foreach: {data: compareProducts().categoryItems, as: 'category'}, mageInit: {'tabs':{'openedState': 'active', 'active': activeTabIndex}}, afterRender: afterLoaded" role="tablist">
+            <div class="data item title active" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.laptops.list" aria-labeledby="tab-label-category.compare.laptops.list-title" url-key="laptops" list-index="0" role="tab" data-collapsible="true" aria-controls="category.compare.laptops.list" aria-selected="false" aria-expanded="true" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.laptops.list-title" href="#category.compare.laptops.list">
+                    <span class="name" data-bind="text: name">Laptops</span> (<span class="count" data-bind="text: count">1</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.laptops.list" aria-labelledby="tab-label-category.compare.laptops.list" role="tabpanel" aria-hidden="false">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false -->
+                    <li class="item odd" data-bind="attr: {'data-product-id': id, 'data-product-sku': sku}" data-product-id="14932" data-product-sku="B61ZHPA">
+                        <div class="remove-icon" data-bind="attr: {'data-post': remove_url, 'data-category-url-key': $parent.url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/catalog\/product_compare\/remove\/&quot;,&quot;data&quot;:{&quot;uenc&quot;:&quot;&quot;,&quot;product&quot;:&quot;14932&quot;,&quot;confirmation&quot;:true,&quot;confirmationMessage&quot;:&quot;Are you sure you want to remove this item from your Compare Products list?&quot;}}" data-category-url-key="laptops"></div>
+                        <a class="product-item-photo" data-bind="attr: {href: product_url, title: name}" title="HP Laptop 39.6 cm (15.6) 15-fd0467TU, Silver" data-link="https://www.hp.com/in-en/shop/hp-laptop-15-fd0467tu-b61zhpa.html" style="cursor: pointer;">
+                            <div class="product-image-container">
+                                <img data-bind="attr: {src: image_url, alt: name}" src="https://in-media.apjonlinecdn.com/catalog/product/cache/ea90a1623f3f2944c5341ae0c5790169/c/0/c08510542_1_1_13.png" alt="HP Laptop 39.6 cm (15.6) 15-fd0467TU, Silver">
+                            </div>
+                            <div class="product-item-name stellar-body__small" data-bind="html: name">HP Laptop 39.6 cm (15.6) 15-fd0467TU, Silver</div>
+                        </a>
+                        <div class="product-item-price">
+                            <!-- ko if: (mrp) -->
+                            <span data-bind="html: mrp">72,052.00</span>
+                            <!-- /ko -->
+                            <span class="price" data-bind="html: price">₹60,499</span>
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                    <!-- ko if: isEmpty == true --><!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action odd">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: block;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/laptops/" data-gtm-category="compareModels" data-gtm-value="B61ZHPA">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;laptops&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="laptops">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: none;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.desktops.list" aria-labeledby="tab-label-category.compare.desktops.list-title" url-key="desktops" list-index="1" role="tab" data-collapsible="true" aria-controls="category.compare.desktops.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.desktops.list-title" href="#category.compare.desktops.list">
+                    <span class="name" data-bind="text: name">Desktops</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.desktops.list" style="display: none;" aria-labelledby="tab-label-category.compare.desktops.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action even">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: none;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/desktops/" data-gtm-category="compareModels" data-gtm-value="">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;desktops&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="desktops">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: block;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.printers.list" aria-labeledby="tab-label-category.compare.printers.list-title" url-key="printers" list-index="2" role="tab" data-collapsible="true" aria-controls="category.compare.printers.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.printers.list-title" href="#category.compare.printers.list">
+                    <span class="name" data-bind="text: name">Printers</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.printers.list" style="display: none;" aria-labelledby="tab-label-category.compare.printers.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action odd">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: none;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/printers/" data-gtm-category="compareModels" data-gtm-value="">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;printers&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="printers">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: block;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.designjet.list" aria-labeledby="tab-label-category.compare.designjet.list-title" url-key="designjet" list-index="3" role="tab" data-collapsible="true" aria-controls="category.compare.designjet.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.designjet.list-title" href="#category.compare.designjet.list">
+                    <span class="name" data-bind="text: name">Designjet</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.designjet.list" style="display: none;" aria-labelledby="tab-label-category.compare.designjet.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.scanner.list" aria-labeledby="tab-label-category.compare.scanner.list-title" url-key="scanner" list-index="4" role="tab" data-collapsible="true" aria-controls="category.compare.scanner.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.scanner.list-title" href="#category.compare.scanner.list">
+                    <span class="name" data-bind="text: name">Scanner</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.scanner.list" style="display: none;" aria-labelledby="tab-label-category.compare.scanner.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action odd">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: none;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/scanner/" data-gtm-category="compareModels" data-gtm-value="">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;scanner&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="scanner">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: block;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.monitors.list" aria-labeledby="tab-label-category.compare.monitors.list-title" url-key="monitors" list-index="5" role="tab" data-collapsible="true" aria-controls="category.compare.monitors.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.monitors.list-title" href="#category.compare.monitors.list">
+                    <span class="name" data-bind="text: name">Monitors</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.monitors.list" style="display: none;" aria-labelledby="tab-label-category.compare.monitors.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action even">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: none;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/monitors/" data-gtm-category="compareModels" data-gtm-value="">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;monitors&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="monitors">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: block;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.accessories.list" aria-labeledby="tab-label-category.compare.accessories.list-title" url-key="accessories" list-index="6" role="tab" data-collapsible="true" aria-controls="category.compare.accessories.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.accessories.list-title" href="#category.compare.accessories.list">
+                    <span class="name" data-bind="text: name">Accessories</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.accessories.list" style="display: none;" aria-labelledby="tab-label-category.compare.accessories.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action odd">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: none;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/accessories/" data-gtm-category="compareModels" data-gtm-value="">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;accessories&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="accessories">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: block;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="data item title" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list', 'aria-labeledby': 'tab-label-category.compare.' + url_key + '.list-title', 'url-key': url_key, 'list-index': $index}" data-role="collapsible" id="tab-label-category.compare.carepack.list" aria-labeledby="tab-label-category.compare.carepack.list-title" url-key="carepack" list-index="7" role="tab" data-collapsible="true" aria-controls="category.compare.carepack.list" aria-selected="false" aria-expanded="false" tabindex="0">
+                <a class="data switch stellar-bold__extra-small" tabindex="-1" data-toggle="switch" data-bind="attr: {'id': 'tab-label-category.compare.' + url_key + '.list-title', 'href': '#category.compare.' + url_key + '.list'}" id="tab-label-category.compare.carepack.list-title" href="#category.compare.carepack.list">
+                    <span class="name" data-bind="text: name">Care Pack</span> (<span class="count" data-bind="text: count">0</span>)
+                </a>
+            </div>
+            <div class="data item content" data-role="content" data-bind="attr: {'id': 'category.compare.' + url_key + '.list'}" id="category.compare.carepack.list" style="display: none;" aria-labelledby="tab-label-category.compare.carepack.list" role="tabpanel" aria-hidden="true">
+                <ul class="compare-list">
+                    <!-- ko foreach: { data: items, afterRender: $parent.afterItemLoaded } -->
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty active even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    <span>Please select at least two products to compare</span></li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty even" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    
+                    <!-- ko if: isEmpty == false --><!-- /ko -->
+                    <!-- ko if: isEmpty == true -->
+                    <li class="empty odd" data-product-id="">
+                        <div class="add-product">Add <br> Product</div>
+                    </li>
+
+                    <!-- /ko -->
+                    <!-- /ko -->
+                    <li class="compare-action even last">
+                        <div class="has-item" data-bind="style: {display: category.count ? 'block' : 'none'}" style="display: none;">
+                            <button class="action primary compare-now disabled" data-bind="click: $parent.saveCurrentUrl, attr: {compare_url: compare_url, class: count < 2 ? 'action primary compare-now disabled' : 'action primary compare-now', 'data-gtm-category': 'compareModels', 'data-gtm-value': data_gtm_value}" compare_url="https://www.hp.com/in-en/shop/catalog/product_compare/index/category/carepack/" data-gtm-category="compareModels" data-gtm-value="">
+                                <span>Compare now</span>
+                            </button>
+                            <div class="action primary remove-all" data-bind="attr: {'data-post': remove_all_url, 'data-category-url-key': url_key}" data-post="{&quot;action&quot;:&quot;https:\/\/www.hp.com\/in-en\/shop\/hpols_catalog\/product_compare\/removeall\/&quot;,&quot;data&quot;:{&quot;category&quot;:&quot;carepack&quot;,&quot;uenc&quot;:&quot;&quot;}}" data-category-url-key="carepack">
+                                <span>Clear all</span>
+                            </div>
+                        </div>
+                        <div class="no-item" data-bind="style: {display: !category.count ? 'block' : 'none'}" style="display: block;">
+                            No product added to compare list                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
