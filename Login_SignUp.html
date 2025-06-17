@@ -16,7 +16,10 @@
                 <p class="Create_Account"><a href="Create_Account.html"> Create Account</a></p>
             </div>
             <div class="input_box">
-                <input class="Input_Taken_UserName_Email" type="text" placeholder="Username or Email Address">
+                <input class="Input_Taken_UserName_Email" type="text" placeholder="Username or Email Address" id="login-username">
+            </div>
+            <div class="input_box">
+                <input class="Input_Taken_UserName_Email" type="password" placeholder="Password" id="login-password">
             </div>
             <div class="Sign_in_with_mobile_number">
                 <p class="Sign_in_with_mobile_number">
@@ -24,13 +27,7 @@
                 </p>
             </div>
             <div class="Use_Password_Button">
-                <button class="Use_pass">Use password</button>
-            </div>
-            <div class="or">
-                <p class="or1">or</p>
-            </div>
-            <div class="sign_in_with_code">
-                <button  class="Send_sign_in_code">Send sign in code</button>
+                <button class="Use_pass" id="login-btn" disabled>Login</button>
             </div>
             <div class="confirmation_username_and_email_remember">
                 <input class="Check_box_Remember" type="checkbox">
@@ -51,5 +48,37 @@
             </div>
         </div>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const username = document.getElementById('login-username');
+        const password = document.getElementById('login-password');
+        const loginBtn = document.getElementById('login-btn');
+        function checkLoginFields() {
+            if (username.value.trim() && password.value.trim()) {
+                loginBtn.disabled = false;
+            } else {
+                loginBtn.disabled = true;
+            }
+        }
+        username.addEventListener('input', checkLoginFields);
+        password.addEventListener('input', checkLoginFields);
+        checkLoginFields();
+
+        loginBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!loginBtn.disabled) {
+                window.location.href = 'index.html';
+            }
+        });
+    });
+    </script>
+    <style>
+    .Use_pass:disabled {
+        background: #b3d6ec;
+        color: #fff;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+    </style>
 </body>
 </html>
